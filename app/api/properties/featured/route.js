@@ -1,7 +1,7 @@
 import connectDB from "@/config/database";
 import Property from "@/models/Property";
-import { getUserSession } from "@/utils/getSessionUser";
-import cloudinary from "@/config/cloudinary";
+
+export const dynamic = "force-dynamic";
 
 export const GET = async (request) => {
   try {
