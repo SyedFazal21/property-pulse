@@ -11,7 +11,7 @@ export default function Messages() {
     const fetchMessages = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/messages`
+          `/api/messages`
         );
         if (res.status === 200) {
           const data = await res.json();

@@ -11,7 +11,7 @@ import {
 } from "react-share";
 
 export default function ShareButtons({ property }) {
-  const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN}/properties/${property._id}`;
+  const shareUrl = `/api/properties/${property._id}`;
 
   return (
     <>

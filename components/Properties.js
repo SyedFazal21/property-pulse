@@ -21,7 +21,7 @@ export default function Properties() {
       try {
         setLoading(true);
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties?page=${page}&pagesize=${pageSize}`
+          `/api/properties?page=${page}&pagesize=${pageSize}`
         );
         if (!res.ok) {
           throw new Exception("Failed to fetch Properties");

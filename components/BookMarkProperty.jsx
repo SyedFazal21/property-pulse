@@ -15,7 +15,7 @@ export default function BookMarkProperty({ property }) {
     const checkIsBookmarked = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/bookmarks/check`,
+          `/api/bookmarks/check`,
           {
             method: "POST",
             headers: {
@@ -46,7 +46,7 @@ export default function BookMarkProperty({ property }) {
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_DOMAIN}/bookmarks`,
+        `/api/bookmarks`,
         {
           method: "POST",
           headers: {

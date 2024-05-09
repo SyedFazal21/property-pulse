@@ -103,7 +103,7 @@ export default function EditPropertyForm() {
     try {
       const formData = new FormData(e.target);
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties/${id}`,
+        `/api/properties/${id}`,
         {
           method: "PUT",
           body: formData,

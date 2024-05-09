@@ -10,7 +10,7 @@ export default function UnReadMsgCount({session}) {
 
         const fetchCount = async () => {
             try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/messages/unread-count`);
+                const res = await fetch(`/api/messages/unread-count`);
                 if(res.status === 200) {
                     const data = await res.json();
                     setCount(data);

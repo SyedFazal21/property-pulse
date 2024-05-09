@@ -12,7 +12,7 @@ export default function MessageCard({ message }) {
   const handleMsgRead = async () => {
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_DOMAIN}/messages/${message._id}`,
+        `/api/messages/${message._id}`,
         {
           method: "PUT",
         }
@@ -39,7 +39,7 @@ export default function MessageCard({ message }) {
   const handleMsgDelete = async () => {
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_DOMAIN}/messages/${message._id}`,
+        `/api/messages/${message._id}`,
         {
           method: "DELETE",
         }

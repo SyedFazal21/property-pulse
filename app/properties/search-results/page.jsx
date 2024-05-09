@@ -22,7 +22,7 @@ export default function SearchResultsPage() {
     const fetchProperties = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties/search?location=${location}&propertyType=${propertyType}`
+          `/api/properties/search?location=${location}&propertyType=${propertyType}`
         );
         if (res.status === 200) {
           const data = await res.json();

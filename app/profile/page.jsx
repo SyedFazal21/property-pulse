@@ -28,7 +28,7 @@ export default function ProfilePage() {
 
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties/user/${userId}`
+          `/api/properties/user/${userId}`
         );
 
         if (res.status === 200) {
@@ -58,7 +58,7 @@ export default function ProfilePage() {
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties/${propertyId}`,
+        `/api/properties/${propertyId}`,
         { method: "DELETE" }
       );
 

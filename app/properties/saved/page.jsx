@@ -13,7 +13,7 @@ export default function SavedPropertyPage() {
     const fetchProperties = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_DOMAIN}/bookmarks`
+          `/api/bookmarks`
         );
         if (res.status === 200) {
           const data = await res.json();
