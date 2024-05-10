@@ -3,7 +3,7 @@ module.exports = {
         return [
           {
             source: '/api/:path*',
-            destination: 'https://property-pulse-nu.vercel.app/api/:path*',
+            destination: 'https://property-pulse-blond.vercel.app/api/:path*',
           },
         ]
       },
